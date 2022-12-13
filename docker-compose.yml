@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  nodejs:
+    container_name: "parse-dashboard"
+    image: parseplatform/parse-dashboard:5.0.0
+    volumes:
+      - ./config.json:/src/Parse-Dashboard/parse-dashboard-config.json
+    ports:
+      - "4040:4040"
+    environment:
+      - PARSE_DASHBOARD_ALLOW_INSECURE_HTTP=1
+
+
+networks:
+  default:
+    external:
+      name: proxy-server-network

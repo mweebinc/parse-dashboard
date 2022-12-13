@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "serverURL": "http://localhost/v1",
+      "appId": "your-appid",
+      "masterKey": "your-master-key",
+      "appName": "App"
+    }
+  ],
+  "users": [
+    {
+      "user":"admin",
+      "pass":"pass123$"
+    }
+  ]
+}
